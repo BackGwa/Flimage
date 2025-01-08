@@ -5,22 +5,27 @@
 
 </div>
 
-<br>
+<br><br>
 
-## Features
+## Features & Use Cases
 
 - Encode files to PNG format
 - Decode encoded PNG files back to their original files
+- Secure file transmission
+- File compression
+- Extension bypass
+
+<br>
 
 > ⚠️ **Disclaimer:**  
 Flimage is intended for educational and recreational purposes only. Do not use it for malicious purposes or as a means to protect sensitive files.
 
-<br>
+<br><br>
 
 ## Used Library
 - [lodepng](https://github.com/lvandeve/lodepng) - PNG Encoder & Decoder
 
-<br>
+<br><br>
 
 ## Contributor
 - [강찬영](https://github.com/BackGwa/) (BACKGWA)
