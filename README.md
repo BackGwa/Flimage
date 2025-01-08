@@ -1,6 +1,7 @@
 <div align="center">
 
-# Flimage
+<img src="res/Flimage.png" width=300>
+
 **Flimage** is a simple utility that allows you to **encode files into PNG format** or **decode encoded PNG files back to their original format** with an easy drag-and-drop interface.
 
 </div>
