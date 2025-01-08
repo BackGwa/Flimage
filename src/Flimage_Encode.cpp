@@ -7,17 +7,17 @@
 
 static std::vector<unsigned char> readFileAll(const std::string& path) {
     std::ifstream ifs(path, std::ios::binary | std::ios::ate);
-    if (!ifs.is_open()) throw std::runtime_error("파일을 열 수 없음");
+    if (!ifs.is_open()) throw std::runtime_error("Failed to open file");
     std::streampos fileSize = ifs.tellg();
     ifs.seekg(0, std::ios::beg);
     std::vector<unsigned char> buffer(fileSize);
-    if (!ifs.read(reinterpret_cast<char*>(buffer.data()), fileSize)) throw std::runtime_error("파일 읽기 실패");
+    if (!ifs.read(reinterpret_cast<char*>(buffer.data()), fileSize)) throw std::runtime_error("Failed to read file");
     return buffer;
 }
 
 static void writeFileAll(const std::string& path, const std::vector<unsigned char>& data) {
     std::ofstream ofs(path, std::ios::binary);
-    if (!ofs.is_open()) throw std::runtime_error("파일을 쓸 수 없음");
+    if (!ofs.is_open()) throw std::runtime_error("Failed to write file");
     ofs.write(reinterpret_cast<const char*>(data.data()), data.size());
     ofs.close();
 }
@@ -129,7 +129,8 @@ int main(int argc, char* argv[]) {
         writeFileAll(outBmp, bmpData);
     }
     catch (const std::exception& e) {
-        std::cerr << e.what() << std::endl;
+        std::cerr << "[Error] : " << e.what() << std::endl;
+        return -1;
     }
     return 0;
 }
