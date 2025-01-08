@@ -19,7 +19,7 @@
 <br>
 
 > ⚠️ **Disclaimer:**  
-Flimage is intended for educational and recreational purposes only. Do not use it for malicious purposes or as a means to protect sensitive files.
+Do not use it for malicious purposes or as a means to protect sensitive files.
 
 <br><br>
 
