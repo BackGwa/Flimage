@@ -1,2 +1,2 @@
-g++ ./src/Flimage_Encode.cpp -o ./bin/Flimage_Encoder.out
-g++ ./src/Flimage_Decode.cpp -o ./bin/Flimage_Decoder.out
+g++ ./src/Flimage_Encode.cpp ./src/lodepng.cpp -o ./bin/Flimage_Encoder
+g++ ./src/Flimage_Decode.cpp ./src/lodepng.cpp -o ./bin/Flimage_Decoder
