@@ -3,6 +3,7 @@
 #include <vector>
 #include <stdexcept>
 #include <string>
+#include <cstdint>
 
 #include "lodepng.h"
 

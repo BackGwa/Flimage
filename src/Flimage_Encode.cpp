@@ -4,6 +4,7 @@
 #include <cmath>
 #include <stdexcept>
 #include <string>
+#include <cstdint>
 
 #include "lodepng.h"
 
